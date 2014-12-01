@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var lblMessage: UILabel!
+    @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var tfName: UITextField!
     @IBOutlet weak var tfMessage: UITextField!
     @IBOutlet weak var btnSendMail: UIButton!
@@ -33,6 +34,13 @@ class ViewController: UIViewController {
         
         tfMessage.text = ""
         tfMessage.resignFirstResponder()
+        
+        lblName.hidden = false
+        lblName.text = tfName.text
+        lblName.textColor = UIColor.blueColor()
+
+        tfName.text = ""
+        tfName.resignFirstResponder()
         
         btnSendMail.setTitle("Mail Sent", forState: UIControlState.Normal)
     }

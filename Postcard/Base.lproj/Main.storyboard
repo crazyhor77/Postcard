@@ -104,6 +104,14 @@
                                     <action selector="btnSendMail_TouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yE1-7c-SUc"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-1q-jRk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="160" width="226" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +121,7 @@
                                 <exclude reference="IOL-cg-4vd"/>
                                 <exclude reference="0B4-FP-SkR"/>
                                 <exclude reference="UFS-Y2-pcF"/>
+                                <exclude reference="hgP-1q-jRk"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,12 +131,14 @@
                                 <include reference="IOL-cg-4vd"/>
                                 <include reference="0B4-FP-SkR"/>
                                 <include reference="UFS-Y2-pcF"/>
+                                <include reference="hgP-1q-jRk"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="btnSendMail" destination="UFS-Y2-pcF" id="Ucp-hQ-WUb"/>
                         <outlet property="lblMessage" destination="xxp-M3-KGQ" id="e5s-oE-ZEK"/>
+                        <outlet property="lblName" destination="hgP-1q-jRk" id="dTv-q8-nWx"/>
                         <outlet property="tfMessage" destination="0B4-FP-SkR" id="dcb-Nx-OLr"/>
                         <outlet property="tfName" destination="IOL-cg-4vd" id="X2L-Kj-gKT"/>
                     </connections>
