@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSendMail_TouchUpInside(sender: UIButton) {
+        // Adding a comment here to test commits
         lblMessage.hidden = false
         lblMessage.text = tfMessage.text
         lblMessage.textColor = UIColor.redColor()
